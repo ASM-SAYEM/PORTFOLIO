@@ -1,0 +1,36 @@
+<div class="contact-section">
+  <h1 class="contact-title">Contact Me</h1>
+  <div class="contact-info-form">
+    <div class="contact-info">
+      <div class="info-item">
+        <span class="info-icon">📞</span>
+        <span class="info-label">Phone:</span>
+        <span class="info-value">+880 01719144682</span>
+      </div>
+      <div class="info-item">
+        <span class="info-icon">✉️</span>
+        <span class="info-label">Email:</span>
+        <span class="info-value">asmsayemsetu&#64;gmail.com</span>
+      </div>
+    </div>
+    <form class="contact-form" (submit)="onSubmit($event)">
+      <h2>Send me a message</h2>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required [disabled]="isSending" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required [disabled]="isSending" />
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required [disabled]="isSending"></textarea>
+      </div>
+      <button type="submit" class="send-btn" [disabled]="isSending">
+        <span *ngIf="!isSending">Send</span>
+        <span *ngIf="isSending">Sending...</span>
+      </button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,182 @@
+.education-container {
+  padding: 32px 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.education-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #f1f5f9;
+  margin-bottom: 48px;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.timeline {
+  position: relative;
+  margin-bottom: 64px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, #3b82f6, #8b5cf6);
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.timeline-item:nth-child(odd) .timeline-card {
+  margin-left: 0;
+  margin-right: 55%;
+}
+
+.timeline-item:nth-child(even) .timeline-card {
+  margin-left: 55%;
+  margin-right: 0;
+}
+
+.timeline-card {
+  background: linear-gradient(135deg, #1e293b, #334155);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  border: 1px solid #475569;
+  position: relative;
+}
+
+.timeline-card::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  background: #3b82f6;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.timeline-item:nth-child(odd) .timeline-card::before {
+  right: -60px;
+}
+
+.timeline-item:nth-child(even) .timeline-card::before {
+  left: -60px;
+}
+
+.card-header {
+  margin-bottom: 16px;
+}
+
+.degree {
+  font-size: 1.3rem;
+  color: #f1f5f9;
+  margin: 0 0 8px 0;
+}
+
+.institution {
+  color: #3b82f6;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.card-body {
+  color: #cbd5e1;
+}
+
+.period {
+  font-weight: 600;
+  color: #8b5cf6;
+  margin-bottom: 8px;
+}
+
+.location {
+  margin-bottom: 8px;
+}
+
+.gpa {
+  font-weight: 600;
+  color: #10b981;
+  font-size: 1.1rem;
+}
+
+.achievement-section {
+  margin-top: 64px;
+}
+
+.achievement-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #f1f5f9;
+  margin-bottom: 32px;
+}
+
+.achievement-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.achievement-card {
+  background: linear-gradient(135deg, #1e293b, #334155);
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  border: 1px solid #475569;
+  transition: transform 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-8px);
+}
+
+.achievement-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.achievement-text h4 {
+  color: #f1f5f9;
+  margin: 0 0 8px 0;
+  font-size: 1.2rem;
+}
+
+.achievement-text p {
+  color: #10b981;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 20px;
+  }
+  
+  .timeline-item:nth-child(odd) .timeline-card,
+  .timeline-item:nth-child(even) .timeline-card {
+    margin-left: 60px;
+    margin-right: 0;
+  }
+  
+  .timeline-item:nth-child(odd) .timeline-card::before,
+  .timeline-item:nth-child(even) .timeline-card::before {
+    left: -50px;
+  }
+  
+  .achievement-cards {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,1 +1,265 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global Dark Mode Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #0f172a;
+  color: #f1f5f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  color: #f1f5f9;
+}
+
+/* Dark mode scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Dark mode selection */
+::selection {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+/* Dark mode focus styles */
+*:focus {
+  outline: 2px solid #38bdf8;
+  outline-offset: 2px;
+}
+
+/* Dark mode links */
+a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #7dd3fc;
+}
+
+/* Dark mode form elements */
+input, textarea, select {
+  background: #1e293b;
+  color: #f1f5f9;
+  border: 1px solid #475569;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.2);
+}
+
+/* Dark mode buttons */
+button {
+  background: #1e293b;
+  color: #f1f5f9;
+  border: 1px solid #475569;
+}
+
+button:hover {
+  background: #334155;
+}
+
+/* Dark mode headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #f1f5f9;
+}
+
+/* Dark mode paragraphs */
+p {
+  color: #cbd5e1;
+}
+
+/* Dark mode code blocks */
+code {
+  background: #1e293b;
+  color: #f472b6;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+}
+
+/* Dark mode pre blocks */
+pre {
+  background: #1e293b;
+  color: #f1f5f9;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #475569;
+  overflow-x: auto;
+}
+
+/* Dark mode tables */
+table {
+  background: #1e293b;
+  border: 1px solid #475569;
+}
+
+th, td {
+  border: 1px solid #475569;
+  padding: 8px 12px;
+}
+
+th {
+  background: #334155;
+  color: #f1f5f9;
+}
+
+/* Dark mode blockquotes */
+blockquote {
+  border-left: 4px solid #38bdf8;
+  padding-left: 16px;
+  margin: 16px 0;
+  color: #cbd5e1;
+  background: rgba(56, 189, 248, 0.1);
+  padding: 16px;
+  border-radius: 0 8px 8px 0;
+}
+
+/* Dark mode horizontal rules */
+hr {
+  border: none;
+  height: 1px;
+  background: #475569;
+  margin: 24px 0;
+}
+
+/* Dark mode list styles */
+ul, ol {
+  color: #cbd5e1;
+}
+
+li {
+  margin: 4px 0;
+}
+
+/* Dark mode strong and emphasis */
+strong {
+  color: #f1f5f9;
+}
+
+em {
+  color: #38bdf8;
+}
+
+/* Dark mode mark/highlight */
+mark {
+  background: #fbbf24;
+  color: #0f172a;
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+
+/* Dark mode small text */
+small {
+  color: #94a3b8;
+}
+
+/* Dark mode abbr */
+abbr {
+  border-bottom: 1px dotted #64748b;
+  cursor: help;
+}
+
+/* Dark mode kbd */
+kbd {
+  background: #1e293b;
+  color: #f1f5f9;
+  border: 1px solid #475569;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+}
+
+/* Dark mode details and summary */
+details {
+  background: #1e293b;
+  border: 1px solid #475569;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+summary {
+  cursor: pointer;
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+summary:hover {
+  color: #7dd3fc;
+}
+
+/* Dark mode dialog */
+dialog {
+  background: #1e293b;
+  color: #f1f5f9;
+  border: 1px solid #475569;
+  border-radius: 8px;
+}
+
+dialog::backdrop {
+  background: rgba(15, 23, 42, 0.8);
+}
+
+/* Dark mode progress */
+progress {
+  background: #1e293b;
+  border: 1px solid #475569;
+  border-radius: 4px;
+}
+
+progress::-webkit-progress-bar {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+progress::-webkit-progress-value {
+  background: #38bdf8;
+  border-radius: 4px;
+}
+
+/* Dark mode meter */
+meter {
+  background: #1e293b;
+  border: 1px solid #475569;
+  border-radius: 4px;
+}
+
+meter::-webkit-meter-bar {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+meter::-webkit-meter-optimum-value {
+  background: #10b981;
+}
+
+meter::-webkit-meter-suboptimum-value {
+  background: #f59e0b;
+}
+
+meter::-webkit-meter-even-less-good-value {
+  background: #ef4444;
+}
