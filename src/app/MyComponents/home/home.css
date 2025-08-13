@@ -219,4 +219,37 @@ html, body, :host {
     font-size: 1.2rem;
   }
 }
-  
+  .hero-socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.social-link {
+  font-weight: 600;
+  text-decoration: none;
+  color: #2c3e50;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.social-link:hover {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+.social-badge {
+  display: inline-block;
+  background-color: #f1f3f5;
+  color: #2c3e50;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.social-badge:hover {
+  background-color: #dbe9ff;
+}
