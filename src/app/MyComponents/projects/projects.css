@@ -75,3 +75,15 @@
   background: #fff;
   color: #1e293b;
 }
+.project-badge {
+  display: inline-block;
+  background-color: #e3e8f0;
+  color: #2c3e50;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 12px;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
